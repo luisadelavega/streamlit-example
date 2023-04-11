@@ -33,20 +33,18 @@ keyword_input = st.text_input("Enter the keywords here")
 domains_input = st.text_input("Enter specific domain(s) here. If more than one separate by ',' ")
 
 # Cwords to include or exclude
-filteringcriteria_input = st.text_input("Enter keywords to include in your query.")
+filteringcriteria_input = st.text_input("Enter words to include in your query.")
 
 output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
 
 final_button=st.button('request query')
 
-# Set the path to your Jupyter notebook file
-notebook_path = '00_SERP.ipynb'
 
 # Create a function that runs the notebook when the button is clicked
-def run_notebook():
+def run_notebook(notebook_path):
     subprocess.run(['jupyter', 'nbconvert', '--execute', notebook_path])
 
 # Create a Streamlit button that runs the function when clicked
 if final_button:
-    run_notebook()
+    run_notebook('00_SERP.ipynb')
