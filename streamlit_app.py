@@ -17,9 +17,6 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 options = ['News','Tweets']
 selected_option = st.selectbox('Select an option', options)
-
-# Create a text box for user input
-user_input = st.text_input("Enter text here")
            
 language = ['English','Dutch']
 selected_language = st.selectbox('Select an option', language)
