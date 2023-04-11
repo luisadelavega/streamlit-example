@@ -15,6 +15,9 @@ selected_option = st.selectbox('Select a data source', options)
 language = ['English','Dutch']
 selected_language = st.multiselect('Select the language', language)
 
+location = ['USA','UK']
+selected_language = st.multiselect('Select the location', location)
+
 # Create a text box for user input
 daterange_input = st.text_input("Enter the keywords here")
 
