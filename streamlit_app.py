@@ -5,21 +5,21 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
+### News & Twitter search tool
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
 options = ['News','Tweets']
-selected_option = st.selectbox('Select an option', options)
+selected_option = st.selectbox('Select a data source', options)
            
 language = ['English','Dutch']
-selected_language = st.selectbox('Select an option', language)
+selected_language = st.selectbox('Select the language', language)
 
 # Create a text box for user input
-user_input = st.text_input("Enter the keywords here")
+daterange_input = st.text_input("Enter the keywords here")
+
+# Create a text box for user input
+datefrequency_input = st.text_input("Enter the keywords here")
+
+# Create a text box for user input
+keywords_input = st.text_input("Enter the keywords here")
