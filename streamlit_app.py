@@ -5,6 +5,7 @@ import pandas as pd
 import streamlit as st
 import datetime
 import subprocess
+from nbconvert import NotebookExporter
 
 """
 ### News & Twitter search tool
@@ -40,7 +41,7 @@ selected_option = st.selectbox('Select a file format', output_type)
 
 final_button=st.button('request query')
 
-notebook_path='00_SERP.html'
+notebook_path='00_SERP.ipynb'
 # Create a function that runs the notebook when the button is clicked
 def run_notebook(notebook_path):
     subprocess.run(['jupyter', 'nbconvert', '--execute', notebook_path])
