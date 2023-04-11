@@ -28,4 +28,4 @@ keyword_input = st.text_input("Enter the keywords here")
 output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
 
-final_button=st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False, use_container_width=False)
+final_button=st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, type="secondary", disabled=False, use_container_width=False)
