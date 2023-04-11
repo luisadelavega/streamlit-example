@@ -21,7 +21,7 @@ selected_option = st.selectbox('Select an option', options)
 # Create a text box for user input
 user_input = st.text_input("Enter text here")
            
-options = ['News','Tweets]
+options = ['News','Tweets']
 selected_option = st.selectbox('Select an option', options)
 
 # Create a text box for user input
