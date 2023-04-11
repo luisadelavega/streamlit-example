@@ -13,7 +13,7 @@ options = ['News','Tweets']
 selected_option = st.selectbox('Select a data source', options)
            
 language = ['English','Dutch']
-selected_language = st.selectbox('Select the language', language)
+selected_language = st.multiselect('Select the language', language)
 
 # Create a text box for user input
 daterange_input = st.text_input("Enter the keywords here")
