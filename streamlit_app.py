@@ -27,4 +27,3 @@ keyword_input = st.text_input("Enter the keywords here")
 
 output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
-
