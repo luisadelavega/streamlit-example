@@ -15,21 +15,14 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+options = ['News','Tweets]
+selected_option = st.selectbox('Select an option', options)
+
 # Create a text box for user input
 user_input = st.text_input("Enter text here")
+           
+options = ['News','Tweets]
+selected_option = st.selectbox('Select an option', options)
 
-# Display the user input
-st.write("You entered:", user_input)
-
-def main():
-    st.title("Suspended List")
-    suspended_items = ["Item 1", "Item 2", "Item 3", "Item 4"]
-    container = st.beta_container()
-    with container:
-        for item in suspended_items:
-            checked = st.checkbox(item)
-            if checked:
-                suspended_items.remove(item)
-
-if __name__ == "__main__":
-    main()
+# Create a text box for user input
+user_input = st.text_input("Enter text here")
