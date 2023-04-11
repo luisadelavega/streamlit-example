@@ -6,6 +6,7 @@ import streamlit as st
 import datetime
 import subprocess
 import nbconvert 
+import subprocess
 
 """
 ### News & Twitter search tool
