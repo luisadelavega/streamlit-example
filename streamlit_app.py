@@ -15,7 +15,7 @@ selected_option = st.selectbox('Select a data source', options)
 
 # Define a default date value
 default_date = datetime.date(2023, 4, 11)
-date = st.date_input("Enter a start date", value=default_date, min_value=default_date, max_value=default_date + datetime.timedelta(days=7), format="%Y-%m-%d")
+date = st.date_input("Enter a start date", format="%Y-%m-%d")
            
 language = ['English','Dutch']
 selected_language = st.multiselect('Select the language', language)
