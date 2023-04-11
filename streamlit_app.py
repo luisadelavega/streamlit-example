@@ -25,6 +25,9 @@ selected_language = st.multiselect('Select the location', location)
 # Create a text box for user input
 keyword_input = st.text_input("Enter the keywords here")
 
+# Create a text box for user input
+domains_input = st.text_input("Enter specific domain(s) here. If more than one separate by ',' ")
+
 output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
 
