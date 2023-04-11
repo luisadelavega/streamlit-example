@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import datetime
+import subprocess
 
 """
 ### News & Twitter search tool
@@ -38,3 +39,14 @@ output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
 
 final_button=st.button('request query')
+
+# Set the path to your Jupyter notebook file
+notebook_path = '/path/to/your/notebook.ipynb'
+
+# Create a function that runs the notebook when the button is clicked
+def run_notebook():
+    subprocess.run(['jupyter', 'nbconvert', '--execute', notebook_path])
+
+# Create a Streamlit button that runs the function when clicked
+if final_button:
+    run_notebook()
