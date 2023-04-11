@@ -15,6 +15,9 @@ selected_option = st.selectbox('Select a data source', options)
 
 date_start = st.date_input("Enter a start date")
 date_end = st.date_input("Enter an end date")
+
+date_frequency= ['yearly','monthly','daily']
+selected_date_frequency = st.selectbox('Select a data source', date_frequency)
            
 language = ['English','Dutch']
 selected_language = st.multiselect('Select the language', language)
@@ -27,6 +30,9 @@ keyword_input = st.text_input("Enter the keywords here")
 
 # Create a text box for user input
 domains_input = st.text_input("Enter specific domain(s) here. If more than one separate by ',' ")
+
+# Cwords to include or exclude
+filteringcriteria_input = st.text_input("Enter keywords to include in your query.")
 
 output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
