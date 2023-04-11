@@ -21,8 +21,8 @@ selected_option = st.selectbox('Select an option', options)
 # Create a text box for user input
 user_input = st.text_input("Enter text here")
            
-options = ['News','Tweets']
-selected_option = st.selectbox('Select an option', options)
+language = ['English','Dutch']
+selected_language = st.selectbox('Select an option', language)
 
 # Create a text box for user input
-user_input = st.text_input("Enter text here")
+user_input = st.text_input("Enter the keywords here")
