@@ -13,8 +13,8 @@ import datetime
 options = ['News','Tweets']
 selected_option = st.selectbox('Select a data source', options)
 
-date_start = st.date_input("Enter a start date", format="%Y-%m-%d")
-date_end = st.date_input("Enter an end date", format="%Y-%m-%d")
+date_start = st.date_input("Enter a start date")
+date_end = st.date_input("Enter an end date")
            
 language = ['English','Dutch']
 selected_language = st.multiselect('Select the language', language)
