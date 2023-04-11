@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 import datetime
 import subprocess
-from nbconvert import NotebookExporter
+import nbconvert 
 
 """
 ### News & Twitter search tool
