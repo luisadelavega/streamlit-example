@@ -41,7 +41,7 @@ selected_option = st.selectbox('Select a file format', output_type)
 final_button=st.button('request query')
 
 # Set the path to your Jupyter notebook file
-notebook_path = 'blob/master/00_SERP.ipynb'
+notebook_path = '00_SERP.ipynb'
 
 # Create a function that runs the notebook when the button is clicked
 def run_notebook():
