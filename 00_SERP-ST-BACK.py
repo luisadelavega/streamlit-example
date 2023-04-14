@@ -6,7 +6,7 @@ from datetime import date, timedelta
 warnings.filterwarnings('ignore')
 
 
-def serp_00(api_key, data_source, date_start, date_end, date_frequency='', language, locations, keywords, domains='', filtering_criteria='',):
+def serp_00(api_key, data_source, date_start, date_end, date_frequency='', language, locations, keywords, domains='', filtering_criteria=''):
     #defining the days
     start = date(date_start)
     end = date(date_end)
