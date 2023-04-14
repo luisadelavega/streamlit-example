@@ -13,19 +13,19 @@ import subprocess
 """
 
 options = ['News','Tweets']
-selected_option = st.selectbox('Select a data source', options)
+data_source = st.selectbox('Select a data source', options)
 
 date_start = st.date_input("Enter a start date")
 date_end = st.date_input("Enter an end date")
 
 date_frequency= ['yearly','monthly','daily']
-selected_date_frequency = st.selectbox('Select a data source', date_frequency)
+selected_date_frequency = st.selectbox('Select date frequency', date_frequency)
            
 language = ['English','Dutch']
 selected_language = st.multiselect('Select the language', language)
 
 location = ['USA','UK']
-selected_language = st.multiselect('Select the location', location)
+selected_location = st.multiselect('Select the location', location)
 
 # Create a text box for user input
 keyword_input = st.text_input("Enter the keywords here")
