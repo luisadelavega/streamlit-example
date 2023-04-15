@@ -31,11 +31,17 @@ selected_location = st.multiselect('Select the location', location)
 keyword_input = st.text_input("Enter the keywords here")
 
 # Create a text box for user input
-domains_input = st.text_input("Enter specific domain(s) here. If more than one separate by ',' ")
+domains_input = st.text_input("Enter specific domain(s) here. Separate with ';' ")
 
-# Cwords to include or exclude
-filteringcriteria_input = st.text_input("Enter words to include in your query.")
+# Words to include or exclude
+include = st.text_input("Enter words to include in your query. Separate with ';'")
+exclude = st.text_input("Enter words to exclude from your query. Separate with ';'")
+# We can use a radio button to make the textbox include or exclude but a separate box could be better because the user
+# might want both functionalities.
+# include or exclude Radio
+# choice = st.radio('Choose One', ('Include', 'Exclude'))
 
+# output
 output_type = ['csv','excel']
 selected_option = st.selectbox('Select a file format', output_type)
 
